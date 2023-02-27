@@ -1,0 +1,46 @@
+* {
+  font-family: 'EB Garamond', serif;
+  font-family: 'Itim', cursive;
+}
+
+body {
+  background-color: rgb(241, 188, 188);
+  margin-top: 100px;
+}
+
+
+.card {
+  text-align: center;
+    margin: auto;
+    background-color: rgb(253, 106, 106);
+    width: 350px;
+    height: 300px;
+    margin-top: 200px;
+    border-radius: 15px;
+}
+
+.add-item {
+  background-color: transparent;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  opacity: 0.5;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #EE635C;
+}
+.box {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.plus {
+  background: transparent;
+  border: 0px;
+}
+
+li {
+  list-style: none;
+}
