@@ -31,6 +31,17 @@ body {
   font-weight: 700;
   color: #EE635C;
 }
+
+.list-item {
+ display: inline;
+ padding: 10px;
+}
+
+.item {
+  display: inline;
+  padding: 20px;
+}
+
 .box {
   border-radius: 5px;
   border: 1px solid black;

@@ -78,41 +78,32 @@ function App() {
         {lists.map( list => {
           total += list.quantity
           return (
-            <li id={list.id} key={list.id} className="list-item">
-            <label className='input'>
-              <input type="checkbox" onChange={() => checkItem(list.id)} />
-              <span style={{textDecoration: list.status ? 'line-through' : ''}}>{list.value}</span>
-            </label>
+            <li id={list.id} key={list.id}>
 
-              <span onClick={ () => decrementValue(list.id) }> ◀️ </span>
-               <span>{list.quantity}</span>
-              <span onClick={ () => incrementValue(list.id) }> ▶️ </span>
+              <div className="list-item">
+                <label className='input'>
+                  <input type="checkbox" onChange={() => checkItem(list.id)} />
+                  <span style={{textDecoration: list.status ? 'line-through' : ''}}>{list.value}</span>
+                </label>
+              </div>
 
-              <span onClick={ () => deleteList(list.id) }> ❌ </span>
+              <div className="item">
+                  <span onClick={ () => decrementValue(list.id) }> ◀ </span>
+                  <span>{list.quantity}</span>
+                  <span onClick={ () => incrementValue(list.id) }> ▶ </span>
+
+                  <span onClick={ () => deleteList(list.id) }> ✖️ </span>
+              </div>
             
             </li>
           )
         })}
       </ul>
         <hr></hr>
+
       <div>
         <span>Total: {total}</span>
       </div>
-     
-
-        {/* {lists.map((list) => {
-          return (
-         
-            <input type="checkbox" className="added-list"
-              key={list.value}>
-                {list.value}
-               <button onClick={decrementValue}> ◀️ </button>
-               <span>{count}</span>
-              <button onClick={incrementValue}> ▶️ </button>
-              </input>
-            
-          )
-        })} */}
 
       
     </div>
